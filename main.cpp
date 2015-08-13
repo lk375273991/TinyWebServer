@@ -66,7 +66,7 @@ int main(int argc, const char * argv[]) {
         errorHandling("listern error!");
     }
     
-    //接受服务器的请求
+    //接受服务器的请求,accept调用成功返回一个新的套接字描述符，这个描述符代表了与远程客户端的连接
     client_addr_size = sizeof(client_addr);
     client_sock      = accept(server_sock, (struct sockaddr *)&client_addr, &client_addr_size);
     if (-1==client_sock)
