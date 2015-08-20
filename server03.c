@@ -289,7 +289,7 @@ void catPHP(void *sockc, char *filename, char *query){
 	}
 
     // 传递FCGI_PARAMS参数
-    strcpy(msg, "/home/slark/桌面/");
+    strcpy(msg, "/home/2009/Desktop/");                    //这里是所在的目录
     strcat(msg, filename);
     char *params[][2] = {
         {"SCRIPT_FILENAME", msg}, 
